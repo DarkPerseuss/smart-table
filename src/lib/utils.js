@@ -103,12 +103,10 @@ export function getPages(currentPage, maxPage, limit) {
         end = maxPage;  // Не выходим за пределы максимальной страницы
         start = Math.max(1, end - limit + 1);  // Пересчитываем начало
     }
-
     // Создаем массив номеров страниц
     const pages = [];
     for (let i = start; i <= end; i++) {
         pages.push(i);
     }
-
     return pages;
 }
