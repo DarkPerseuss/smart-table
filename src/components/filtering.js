@@ -10,7 +10,7 @@ export function initFiltering(elements, indexes) {
             const option = document.createElement('option');
             option.value = name;
             option.textContent = name;
-            elements[elementName].append(option);
+            return option;
         }))
     });
     return (data, state, action) => {
